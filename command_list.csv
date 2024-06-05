@@ -1,0 +1,26 @@
+    1  git config --global user.name TrOlga245
+    2  git config --global user.email slotttttt@gmail.com
+    3  git clone https://github.com/TrOlga245/HW_10.git
+    4  cd  ~C:\Users\ASUS\Domashka\HW_10
+    5  cd  ~HW_10
+    6  cd HW_10
+    7  touch text_ignore.txt
+    8  nano .gitignore
+    9  git status
+   10  git add .
+   11  git commit -m "Added text_ignore.txt to .gitignore"
+   12  echo > main_test.txt
+   13  git add .
+   14  git commit -m "Добавлен файл main_test.txt"
+   15  git checkout -b develop
+   16  echo > develop_test.txt
+   17  git add .
+   18  git commit -m "Добавлен файл develop_test.txt"
+   19  echo "HEEELP!" > develop_test.txt
+   20  git status
+   21  git add .
+   22  git commit -m "Обновлен файл develop_test.txt"
+   23  git checkout main
+   24  git merge develop
+   25  git log
+   26  history > command_list.csv
